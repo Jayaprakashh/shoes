@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
-<title>ONLINE SHOES</title>
+ 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -14,21 +16,15 @@
 	<link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="./css/shoe.css">
+<!--   <link rel="stylesheet" href="./css/shoe.css">-->
  
 
 		 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     
 </head>
-
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-	 
-		<jsp:include page="Header.jsp"/>
-		
-			<!--  <nav class="navbar navbar-default navbar-inverse" role="navigation">
+<body>
+			<nav class="navbar navbar-default navbar-inverse" role="navigation">
 				<div class="navbar-header">
 
 					<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -37,7 +33,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
 							class="icon-bar"></span><span class="icon-bar"></span><span
 							class="icon-bar"></span>
 					</button>
-					 
+					<!--<a class="navbar-brand" href="#">adidas</a>  -->
 					<img alt="Carousel Bootstrap First"
 							src="./images/logo-homee1.jpg" width=50px;hight=10px; />
 				</div>
@@ -45,6 +41,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
 				<div class="collapse navbar-collapse"
 					id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
+					<li class="active"><a href="index.jsp">Home</a></li>
 						<li class="active"><a href="#">Mens</a></li>
 						<li><a href="#">Women</a></li>
 						<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -109,122 +106,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
       </ul>
 </div>
 
-			</nav> -->
-			<div class="carousel slide" id="carousel-532241">
-				<ol class="carousel-indicators">
-					<li class="active" data-slide-to="0" data-target="#carousel-532241">
-					</li>
-					<li data-slide-to="1" data-target="#carousel-532241"></li>
-					<li data-slide-to="2" data-target="#carousel-532241"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="item active">
-						<img alt="Carousel Bootstrap First"
-							src="./images/1.jpg" />
-						<div class="carousel-caption">
-							<h4>First Thumbnail label</h4>
-							<p>Cras justo odio, dapibus ac facilisis in, egestas eget
-								quam. Donec id elit non mi porta gravida at eget metus. Nullam
-								id dolor id nibh ultricies vehicula ut id elit.</p>
-						</div>
-					</div>
-					<div class="item">
-						<img alt="Carousel Bootstrap Second"
-							src="./images/2.jpg" />
-						<div class="carousel-caption">
-							<h4>Second Thumbnail label</h4>
-							<p>Cras justo odio, dapibus ac facilisis in, egestas eget
-								quam. Donec id elit non mi porta gravida at eget metus. Nullam
-								id dolor id nibh ultricies vehicula ut id elit.</p>
-						</div>
-					</div>
-					<div class="item">
-						<img alt="Carousel Bootstrap Third"
-							src=" ./images/3.jpg" />
-						<div class="carousel-caption">
-							<h4>Third Thumbnail label</h4>
-							<p>Cras justo odio, dapibus ac facilisis in, egestas eget
-								quam. Donec id elit non mi porta gravida at eget metus. Nullam
-								id dolor id nibh ultricies vehicula ut id elit.</p>
-						</div>
-					</div>
-				</div>
-				<a class="left carousel-control" href="#carousel-532241"
-					data-slide="prev"><span
-					class="glyphicon glyphicon-chevron-left"></span></a> <a
-					class="right carousel-control" href="#carousel-532241"
-					data-slide="next"><span
-					class="glyphicon glyphicon-chevron-right"></span></a>
-			</div>
-			<br><br>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="row">
-						<div class="col-md-4">
-							<div class="thumbnail">
-								<img alt="Bootstrap Thumbnail First"
-									src="./images/p1.jpg" />
-								<div class="caption">
-								<center><h3>Men Shoe Dark Grey </h3>
-									  <p>Rs.2750</p></center>
-									   <a class="btn" href="p1-details.jsp">Buy Now</a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="thumbnail">
-								<img alt="Bootstrap Thumbnail Second"
-									src="./images/p2.jpg" />
-								<div class="caption">
-									<center><h3>Men Shoe Grey & black</h3>
-									  <p>Rs.3500</p></center>
-									<p>
-									  <a class="btn" href="p2-details.jsp">Buy Now</a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="thumbnail">
-								<img alt="Bootstrap Thumbnail Third"
-									src="./images/p5.jpg" />
-								<div class="caption"><br>
-									 
-									<center><h3>Men Shoe Light Blue</h3>
-									  <p>Rs.2500</p></center>
-										   <a class="btn" href="p3-details.jsp">Buy Now</a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<br>
-						<br>
-						<br>
-						<br>
-						
-				<jsp:include page="Footer.jsp"/>		
-		<!--   			<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<a href="#"><span class="fa fa-twitter"></span></a> 
-					<a href="#"><span class="fa fa-facebook"></span></a>
-					<a href="#"><span class="fa fa-google"></span></a>
-				</div>
-				<div class="col-md-2 pull-right">
-				AboutUs
-				</div>
-			</div>
-		</div>
-	</footer>-->
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
+			</nav>
 
 </body>
 </html>
